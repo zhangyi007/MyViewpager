@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.zyyl.myviewpage.ViewPagerInScrollview
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:clipChildren="false"/>
+
+
+
+    <com.zyyl.myviewpage.ViewPagerInScrollview
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+</RelativeLayout>
